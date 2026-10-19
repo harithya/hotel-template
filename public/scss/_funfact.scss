@@ -1,0 +1,627 @@
+/*** 
+
+====================================================================
+    Funfact Sectiom
+====================================================================
+
+***/
+
+.funfact-section {
+  padding: 79px 0 110px;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 79px 0 29px;
+  }
+  .fact-counter {
+    margin: 0 -100px;
+  }
+  .counter-block-one {
+    .inner-box {
+      margin-top: -32px;
+    }
+  }
+  &.luxury2-2 {
+    position: relative;
+    .anim-icons{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &.style-two {
+    .fact-counter {
+      margin: 0 -60px;
+    }
+    .counter-block-one {
+      .inner-box {
+        .counter-text {
+          text-align: left;
+          top: calc(50% - 9px);
+          margin-left: 62px;
+        }
+      }
+    }
+  }
+}
+.counter-block-one {
+  &:last-child {
+    .inner-box {&:before {display: none;}}
+  }
+  .inner-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 50px;
+    }
+    &:before {
+      background-color: #dddede;
+      content: "";
+      height: 60px;
+      position: absolute;
+      top: 40px;
+      right: -30px;
+      width: 1px;
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+    }
+    .count-box {
+      color: rgba(var(--theme-color1-rgb), .3);
+      display: block;
+      font-family: var(--title-font);
+      font-size: 128px;
+      font-weight: 400;
+      line-height: 96px;
+      position: relative;
+      margin-bottom: 0;
+      @include media-breakpoint-down(sm){
+        font-size: 110px;
+      }
+    }
+    .counter-text {
+      color: #222222;
+      font-family: var(--text-font);
+      font-family: var(--title-font);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28.8px;
+      margin-bottom: 0;
+      position: absolute;
+      text-align: center;
+      top: calc(50% + 9px);
+      @include media-breakpoint-down(sm){
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+/*** 
+
+====================================================================
+    Funfact Sectiom Two
+====================================================================
+
+***/
+.funfact-section-two{
+  padding: 125px 0;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 125px 0 75px;
+  }
+}
+
+.counter-block-two {
+  &:last-child {
+    .inner-box {&:before {display: none;}}
+  }
+  .inner-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 50px;
+    }
+    &:before {
+      background-color: #dddede;
+      content: "";
+      height: 60px;
+      position: absolute;
+      right: -30px;
+      width: 1px;
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+    }
+    .count-box {
+      color: rgba(191, 168, 136, .15);
+      display: block;
+      font-family: var(--title-font);
+      font-size: 148px;
+      font-weight: 400;
+      line-height: 96px;
+      position: relative;
+      margin-bottom: 0;
+      @include media-breakpoint-down(sm){
+        font-size: 110px;
+      }
+    }
+    .counter-text {
+      color: #222222;
+      font-family: var(--text-font);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28.8px;
+      margin-bottom: 0;
+      position: absolute;
+      top: 20%;
+      right: 20px;
+      @include media-breakpoint-down(xl){
+        width: 100%;
+        right: 0;
+        text-align: center;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+/*** 
+
+====================================================================
+    Funfact Sectiom Three
+====================================================================
+
+***/
+.funfact-section-three{
+  padding: 79px 0;
+  position: relative;
+  .outer-box {
+    border-bottom: 1px solid rgba(var(--theme-color-black-rgb), 0.1);
+    padding-bottom: 72px;
+    .counter-block-two {
+      .inner-box {
+        &:before {
+          bottom: 0;
+        }
+        .counter-text {
+          top: 38%;
+          right: 40px;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*** 
+
+====================================================================
+    Funfact Sectiom Four
+====================================================================
+
+***/
+
+.funfact-section-four{
+  padding: 80px 0 96px;
+  position: relative;
+  background-color: #E5F0F9;
+  .anim-icons {
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+.counter-block-four {
+    &:last-child {
+        .inner-box {
+            &:before {
+                display: none;
+            }
+        }
+    }
+  .inner-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @include media-breakpoint-down(md){
+      margin-bottom: 30px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        height: 87px;
+        width: 1px;
+        right: -30px;
+        background-color: #dddede;
+        bottom: 25px;
+    }
+    .count-box {
+      color: var(--theme-color-light);
+      display: block;
+      font-family: var(--title-font2);
+      font-size: 128px;
+      font-weight: 400;
+      position: relative;
+      margin-bottom: 0;
+      line-height: 1;
+      z-index: 1;
+      margin-right: 40px;
+      @include media-breakpoint-down(sm){
+        font-size: 110px;
+      }
+    }
+    .counter-text {
+      color: #000000;
+      font-family: var(--title-font);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 0;
+      position: absolute;
+      top: calc(50% - 30px);
+      right: 0;
+      @include media-breakpoint-down(md){
+        position: relative;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+/*** 
+
+====================================================================
+    Funfact Sectiom 
+====================================================================
+
+***/
+.funfact-section-city{
+  padding: 79px 0 100px;
+  position: relative;
+  &.hostel {
+    &:before {
+      display: none;
+    }
+  }
+  &:before {
+    background-image: url(../images/icons/bg-shape8.png);
+    @include background;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -59px;
+    width: 100%;
+    height: 59px;
+    z-index: 1;
+  }
+  .outer-box {
+    .counter-block-two {
+      .inner-box {
+        &:before {
+          bottom: 0;
+        }
+        .counter-text {
+          font-family: var(--title-font2);
+          top: 38%;
+          right: 40px;
+        }
+      }
+    }
+  }
+}
+
+
+/***
+
+==================================================================
+    Fanfact Section Resort
+==================================================================
+
+***/
+
+.fanfact-section-resort {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 300px 0;
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        content: "";
+        z-index: -1;
+    }
+    .outer-box {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    @include media-breakpoint-down(xl) {
+        padding: 80px 0;
+    }
+}
+
+.fanfact-block-resort {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .title {
+        font-size: 120px;
+        line-height: 120px;
+        text-transform: uppercase;
+        color: var(--theme-color-white);
+        margin-bottom: 0;
+        letter-spacing: 2px;
+    }
+    .sub-title {
+        text-transform: capitalize;
+        color: var(--theme-color-white);
+        font-size: 20px;
+    }
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid rgba(var(--theme-color-white-rgb), 0.2);
+        content: "";
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+    }
+
+    @include media-breakpoint-down(xl) {
+        &::after {
+            display: none;
+        }
+        border: 1px solid rgba(var(--theme-color-white-rgb), 0.2);
+        padding: 30px 15px;
+    }
+}
+
+
+/*** 
+
+====================================================================
+funfact section 
+====================================================================
+
+***/
+.funfact-section-lodge {
+  &.luxury2-2 {
+    position: relative;
+    padding: 47px 0 120px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    .anim-icons{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .count-text{
+      color: rgba(104, 145, 9, 0.2);
+    }
+  }
+}
+
+/*** 
+
+====================================================================
+    Funfact Sectiom
+====================================================================
+
+***/
+
+.funfact-section-nature2 {
+  padding: 0 0 110px;
+  position: relative;
+   .anim-icons {
+     position: absolute;
+  left: -159px;
+  bottom: 10px;
+    }
+  @include media-breakpoint-down(lg){
+    padding: 79px 0 29px;
+   
+  }
+  .counter-block-two .inner-box .count-box {
+      color: rgba(105, 145, 10, 0.2);
+  }
+  .fact-counter {
+    margin: 0 -100px;
+  }
+  .counter-block-one {
+    .inner-box {
+      margin-top: -32px;
+    }
+  }
+  &.style-two {
+    .fact-counter {
+      margin: 0 -60px;
+    }
+    .counter-block-one {
+      .inner-box {
+
+        .counter-text {
+           font-family: var(--title-font2);
+          text-align: left;
+          top: calc(50% - 9px);
+          margin-left: 62px;
+        }
+      }
+    }
+  }
+}
+
+
+/*** 
+
+====================================================================
+    H I K I N G L02
+====================================================================
+
+***/
+.funfact-section-hiking-lo2{
+  padding: 120px 0 120px;
+  .fact-counter{
+    .text{
+      font-size: 20px;
+      font-weight: 400;
+      font-family: var(--text-font4);
+      margin-bottom: 50px;
+      span{
+        font-size: 20px;
+        font-weight: 700;
+        font-family: var(--text-font4);
+        color: var(--theme-color1);
+      }
+    }
+  }
+}
+
+/***
+
+==================================================================
+    Fanfact Section Resort
+==================================================================
+
+***/
+
+.fanfact-section-countryside2 {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 300px 0;
+    margin: 0 30px;
+    border-radius: 30px;
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        content: "";
+        z-index: -1;
+    }
+    .outer-box {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    @include media-breakpoint-down(xl) {
+        padding: 80px 0;
+    }
+}
+.fanfact-block-countryside2 {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .title {
+        font-size: 120px;
+        line-height: 120px;
+        text-transform: uppercase;
+        color: var(--theme-color-white);
+        margin-bottom: 0;
+        letter-spacing: 2px;
+    }
+    .sub-title {
+        text-transform: capitalize;
+        color: var(--theme-color-white);
+        font-size: 20px;
+    }
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid rgba(var(--theme-color-white-rgb), 0.2);
+        content: "";
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+    }
+
+    @include media-breakpoint-down(xl) {
+        &::after {
+            display: none;
+        }
+        border: 1px solid rgba(var(--theme-color-white-rgb), 0.2);
+        padding: 30px 15px;
+    }
+}
+
+/*** 
+
+====================================================================
+fanfact-section-countryside2 style-beach3
+====================================================================
+
+***/
+.fanfact-section-countryside2{
+  &.style-beach3{
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+/*** 
+
+====================================================================
+    Funfact Sectiom 
+====================================================================
+
+***/
+.funfact-section-ocean{
+  padding: 79px 0 141px;
+  position: relative;
+  .anim-shape {
+    position: absolute;
+    top: 57px;
+  }
+  &.hostel {
+    &:before {
+      display: none;
+    }
+  }
+  .outer-box {
+    .counter-block-two {
+      .inner-box {
+        &:before {
+          bottom: 0;
+        }
+        .counter-text {
+          font-family: var(--title-font2);
+          top: 49%;
+          right: 71px;
+        }
+      }
+    }
+  }
+}

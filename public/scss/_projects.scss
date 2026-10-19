@@ -1,0 +1,321 @@
+/***
+
+====================================================================
+    Product Section One
+====================================================================
+
+***/
+
+.gallery-section-one {
+  padding: 120px 0;
+}
+
+.gallery-block-one {
+  .inner-box {
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      .content-box {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+        .title {
+          opacity: 1;
+          visibility: visible;
+          transform: translate(0);
+        }
+        .theme-btn {
+          opacity: 1;
+          visibility: visible;
+          transform: translate(0);
+        }
+      }
+      .image-box{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .image-box {
+      .image{
+        position: relative;
+        overflow: hidden;
+        img{
+          height: 430px;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(sm){
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  .content-box {
+    background-color: #222222;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding: 30px;
+    position: absolute;
+    visibility: hidden;
+    transform: translateY(100%);
+    z-index: 2;
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(sm){
+      padding: 20px;
+    }
+    .title {
+      color: var(--theme-color-light);
+      font-family: 'Gilda Display';
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(100%);
+      @include transition(all 300ms ease);
+      @include media-breakpoint-down(sm){
+        font-size: 20px;
+      }
+    }
+    .theme-btn {
+      color: #6A6F78;
+      font-family: 'Barlow';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      transform: translateY(100%);
+      visibility: hidden;
+      @include transition(all 300ms ease);
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+/***
+
+====================================================================
+    Product Section Two
+====================================================================
+
+***/
+
+.gallery-section-two {
+  position: relative;
+  padding: 120px 30px;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+}
+
+.gallery-block-two {
+  .inner-box {
+    overflow: hidden;
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 80%;
+      background: linear-gradient(to top, #000, transparent);
+      z-index: 1;
+      opacity: 0.5;
+      content: "";
+      @include transition(all 300ms ease);
+    }
+    &:hover {
+      &:before {
+        height: 0;
+      }
+      .image-box{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .image-box {
+      height: 100%;
+      .image{
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        img{
+          height: 100%;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(sm){
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/*** 
+
+====================================================================
+    Project Section
+====================================================================
+
+***/
+.lake-project-area {
+  position: relative;
+  .content-box {
+    .inner-box {
+      padding: 280px 0;
+    }
+  }
+  .title {
+    font-size: 110px;
+    color: var(--theme-color-light);
+  }
+}
+
+
+/***
+
+====================================================================
+    Product Section One
+====================================================================
+
+***/
+
+.gallery-section-nature2 {
+  padding: 120px 0 120px;
+  background-color: #ecf2ea;
+  position: relative;
+  .anim-icon {
+      .image-2 {
+            position: absolute;
+            bottom: 0;
+      }
+      .image-1 {
+            position: absolute;
+            top: 0;
+      }
+  }
+}
+
+/***
+
+====================================================================
+    Product Section Two
+====================================================================
+
+***/
+
+.gallery-section-two-country-h01 {
+  position: relative;
+  padding: 120px 30px;
+  background-color: transparent;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+}
+
+.gallery-block-two-country-h01 {
+  .inner-box {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    &:before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 80%;
+      background: linear-gradient(to top, #000, transparent);
+      z-index: 1;
+      opacity: 0.5;
+      content: "";
+      @include transition(all 300ms ease);
+    }
+    &:hover {
+      &:before {
+        height: 0;
+      }
+      .image-box{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .image-box {
+      height: 100%;
+      .image{
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        &.style-one{
+          min-height: 322px;
+          img{
+            min-height: 322px;
+          }
+        }
+        &.style-two{
+          min-height: 804px;
+          img{
+            min-height: 804px;
+          }
+        }
+        img{
+          max-height: 805px;
+          width: 100%;
+          height: 100%;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(sm){
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** 
+
+====================================================================
+ gallery-section-beach3 resort-style
+====================================================================
+
+***/
+
+
+.gallery-section-beach3{
+  &.resort-style{
+    z-index: 1;
+    margin-top: -170px;
+    .container{
+      max-width: 1440px;
+    }
+    .swiper-wrapper{
+      max-width: 1290px;
+    }
+    .outer-box{
+      position: relative;
+    }
+    .slider-arrow-box{
+      bottom: 0;
+      left: 0;
+      margin-top: 150px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    button.swiper-button-next {
+      right: -100px;
+    }
+    button.swiper-button-prev {
+      left: -100px;
+    }
+  }
+}
+

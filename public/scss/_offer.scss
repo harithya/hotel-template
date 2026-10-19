@@ -1,0 +1,84 @@
+
+/***
+
+==================================================================
+    Offer Section One
+==================================================================
+
+***/
+
+
+
+/*** 
+
+====================================================================
+offer section countryside h03
+====================================================================
+
+***/
+
+.offer-section-countryside-h03{
+  background-image: url(../images/background/bg-aountryside3-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding: 105px 0 73px;
+  margin: 0 26px;
+  border-radius: 30px;
+  &:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 30px;
+  }
+  .sec-title{
+    .sub-title{
+      margin-left: 5px;
+      color: var(--theme-color-white);
+    }
+    h2{
+      color: var(--theme-color-white);
+    }
+  }
+  .submit-form-box{
+    margin-left: 68px;
+    .text{
+       color: var(--theme-color-white);
+       z-index: 1;
+       position: relative;
+       margin-bottom: 40px;
+    }
+    .submit-form{
+      padding: 5px 20px;
+      background-color: transparent;
+      border: 1px solid #FFFFFF5C;
+      border-radius: 40px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      input{
+        background-color: transparent;
+        color: var(--theme-color-white);
+      }
+      .theme-btn{
+        text-align: right;
+        border-radius: 40px;
+      }
+    }
+  }
+  &.style-two{
+    background-image: url(../images/background/bg-aountryside3-1.jpg);
+    .theme-btn{
+      background-color: var(--theme-color-black);
+      border: none;
+      &:before{
+        background-color: var(--theme-color6);
+      }
+    }
+  }
+}
